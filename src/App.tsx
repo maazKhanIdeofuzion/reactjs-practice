@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import IncrementComponent from './components/IncrementComponent';
+import DatabindingComponent from './components/DatabindingComponent';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <button className="button-class" onClick={incrementClicked}>Increment</button>
       <button className="button-class" onClick={decrementClicked}>Decrement</button>
       <IncrementComponent value={count} />
+      <DatabindingComponent />
     </div>
   );
 }
